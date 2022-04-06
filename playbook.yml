@@ -14,7 +14,7 @@
       repo: https://github.com/Catman9000/MyCatGenerator
       dest: /home/phoenix/MyCatGenerator
   vars:
-    docker_user: phoenix
+    docker_user: bilal
 
 - hosts: ciservers
   become: true
@@ -34,7 +34,7 @@
   tasks:
   - name: add ansible user to docker group
     user:
-      name: phoenix
+      name: bilal
       groups: docker
       append: yes
   vars:
@@ -46,11 +46,11 @@
   - docker
   - swarm-worker
   vars:
-    docker_user: phoenix
+    docker_user: bilal
 
 - hosts: webserver
   become: true
   roles: 
   - docker
   vars:
-    docker_user: phoenix
+    docker_user: bilal
