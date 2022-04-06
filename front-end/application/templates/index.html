@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>My Cat Generator</title>
+    </head>
+    <body style="background-color: lightblue; font-family: Calibri;">
+        <h1>Which cat deserves a treat today?</h1>
+        {% for catname in catnames %}
+        {{ catname.__str__() }}
+        <br>
+        {% endfor %}
+
+        <h2>Which treat should the cat get?</h2>
+        {% for treatname in treatnames %}
+        {{ treatname.__str__() }}
+        <br>
+        {% endfor %}
+    </body>
+</html>
