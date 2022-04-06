@@ -1,0 +1,53 @@
+version: "3.3"
+services:
+  mysql:
+    image: phoenixpatch/cat-treat-db:latest
+    build: ./db
+    volumes:
+      - type: volume
+        source: cat-vol
+        target: /var/lib/mysql
+    networks:
+      - "cat-net"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: catdb
+  front-end:
+    image: phoenixpatch/mycatgenerator-front:latest
+    build: ./front-end
+    networks:
+      - "cat-net"
+    depends_on:
+      - "cat-api"
+      - "treat-api"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: catdb
+  cat-api:
+    image: phoenixpatch/cat-api:latest
+    build: ./cat-api
+    networks:
+      - "cat-net"
+  treat-api:
+    image: phoenixpatch/treat-api:latest
+    build: ./treat-api
+    networks:
+      - "cat-net"
+  nginx:
+    image: nginx:latest
+    ports:
+      - published: 80
+        target: 80
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: ./nginx.conf
+        target: /etc/nginx/nginx.conf
+    networks:
+      - "cat-net"
+    depends_on:
+      - "front-end"
+volumes:
+  cat-vol:
+networks:
+  cat-net:
