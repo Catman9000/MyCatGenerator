@@ -13,7 +13,7 @@ class TestBase(TestCase):
         return app
     
     def setUp(self):
-        sample_result = Results(animal='cat', noise='meow')
+        sample_result = results(animal='cat', noise='meow')
         db.create_all()
         db.session.add(sample_result)
         db.session.commit()
