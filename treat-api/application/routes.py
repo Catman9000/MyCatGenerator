@@ -1,7 +1,7 @@
 from application import app
 from flask import request, jsonify
 
-treats = dict(Mila='Dreamies', Lilo='Live rat', Phoenix='tobacco')
+treats = dict(Mila='Dreamies treats', Lilo='Live rat', Phoenix='Felix treats')
 
 @app.route('/treat', methods=['POST'])
 def treat():
