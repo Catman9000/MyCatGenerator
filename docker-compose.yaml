@@ -20,12 +20,18 @@ services:
     depends_on:
       - "cat-api"
       - "treat-api"
+      - "wday-api"
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: catdb
   cat-api:
     image: phoenixpatch/cat-api:latest
     build: ./cat-api
+    networks:
+      - "cat-net"
+  wday-api:
+    image: phoenixpatch/wday-api:latest
+    build: ./wday-api
     networks:
       - "cat-net"
   treat-api:

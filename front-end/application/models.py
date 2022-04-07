@@ -5,5 +5,6 @@ class results(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     cat = db.Column(db.String(50))
     treat = db.Column(db.String(50))
+    wday = db.Column(db.String(50))
     def __str__(self):
-        return f"{self.cat} goes {self.treat}"
+        return f"{self.cat} gets {self.treat} on {self.wday}"

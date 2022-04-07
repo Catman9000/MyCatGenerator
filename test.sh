@@ -5,7 +5,7 @@ python3 -m venv venv
 source venv/bin/activate
 pip3 install -r test_requirements.txt
 
-declare -a services=(front-end cat-api treat-api)
+declare -a services=(front-end cat-api treat-api wday-api)
 for dir in "${services[@]}"; do
   cd ${dir}
   python3 -m pytest -p no:warnings --cov=application --cov-report=html
