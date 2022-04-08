@@ -1,27 +1,3 @@
-# MyCatGenerator
-Created git repo
-created instances
-create firewall rules
-git clone repo in instance-1 via vs code
-installed docker, ansible and python on instance-1
-ssh setup for instance-1/docker/ansible
-create ansible folder
-create roles with:
-- docker-compose
-- docker 
-- jenkins
-- nginx
-- python
-- swarm-manager
-- swarm-worker
-
-edited playbook.yml and inventory.yml
-edited the main.yml in the tasks folder of every folder in roles
-create new user and add it to visudo. Add instance-1 ssh to authorized_keys
-
-Installed Jenkins and created a new pipeline item as the project
-
-Installed Jenkins
 
 # QA Practical Project
 
@@ -59,7 +35,7 @@ and more.
 # Breakdown of the application
 
 
-![Website in action](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Website in action](https://github.com/Catman9000/MyCatGenerator/blob/main/images/Website%20in%20action.jpg)
 
 
 ![ApplicationVSCode](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
