@@ -1,7 +1,7 @@
 from application import app
 from flask import request, jsonify
 
-wdays = dict(Mila='Sunday', Lilo='Monday', Phoenix='Wednesday')
+wdays = dict(Mila='Sunday', Lilo='Monday', Phoenix='Wednesday', Cookie='Tuesday', Cinnamon='Sunday', Chocolate='Friday', Oreo='Saturday', Steve='Thursday', Mouse='Tuesday')
 
 @app.route('/wday', methods=['POST'])
 def wday():
