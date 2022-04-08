@@ -47,7 +47,7 @@ I have broken down the application in this readme as it appears logically.
 
 
 
-![Service 1](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Service 1](https://github.com/Catman9000/MyCatGenerator/blob/main/Service%201.jpg)
 
 
 
@@ -58,7 +58,7 @@ This is what the end-user interacts with, and it acts as a sort of tunnel from w
 An sql database container is where the results are stored so that they can then be output on the webpage to show previous results. 
 
 
-![Service 2](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Service 2](https://github.com/Catman9000/MyCatGenerator/blob/main/service%202.jpg)
 
 
 ## Service 2 
