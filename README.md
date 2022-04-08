@@ -21,128 +21,234 @@ create new user and add it to visudo. Add instance-1 ssh to authorized_keys
 
 Installed Jenkins and created a new pipeline item as the project
 
-ssh key ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCdCUE0i1SPt2CGMAPBs5k0DcxyRHGg2tYhLjGTo0lepDHy7zsp+S1tLKrbu7hdSkKvNVrcmGUFX+RCWXIVRkmzLpdTQq3HrD8n7UPru6byMX2FA8iEvqcxK2e1+0Qe2YEUmGPum5WdacLT6KiSBlAptZD7cw9M6k52FU/PBokTFvjZePzaM34e9x14yl01mLjO+DEmOEwYiYkv1M1Ns26b7LA5WXB2oBUxlYpSi9G5zq48xqC8PeZPXZbUDt+bwqkTuuJ0xKZLJhfDstSQtfNitgq+VTmwy4zwcsVsZi2lloP/75Z+ZpYY0BoU9M40zC+Qk6YCxJhFoj272FiAso+gZdBHMHmY18B6ep8NdKB2BIuvfGSSeBrzCVJxguQr04hEQm9c62jhZ23HU64pO4jho7mdkMuT96/yssuuSK969Y/mehzfuxpmsGDZn0lZJhK9Ce6MMfG4kGTzokkrywqNQsSxYYBRD4LPdM2s+vEj9QrF2ws91ufE52Te8u/R8xqlNYsk0PfoohlruJslzt97epd2/rmRlJlwSsDijIOdclO7iWecMhFuKagJN5xwzQfoPxBPdoajLmuqXOXWqC2h4CBURy9wFtihVEghqhpTaxXu2E8Sw/ymEvIq0CwKrxTIkdtoGB3hq2+sc8xwVkqUqYQf4QomVm/O0X65Tge1A6w== phoenix@PhoenixPC
-
-ssh for instance-1
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCoLGGC8NKE9MRzgaw1iXiuKbvETh4s51gUH5itBZispLG8W68Bk/JwIDJSNxWRTGqZmJQesDq4EXPmE2NmTFeZYAqPwjJTH1a1DyJpt5tdS3kXrkjAxv2nraTrkqm7GiXrkvtTAmYZVQQLjL8Q1y4grnfzQBR7WIWWt6rcTmiwjd9W7+iRvBbh67BzY9jAFt8289Z2xUyzRDanePysg85wDiQdXqUWrH4C21bC37JlCTB6bUcFB7Tbmib/Mbn0TEsPNd0clE5IOP06jv5Y1drdhoJlIbY6a0qwviMRiXsSytYIbSreQ1UAVdHa8ARbKlRKp1UI0XaMld2WuiaOFO5mpccB25saHUzAusGv8K9VA4zxQUAFH/En3Kt9T+BbrkSPBS7j7+sW9TJF8To0exU+maBa/ImLotEoJM/NFLuAG5IqVebeyjIlXhPiubobmjteP9MDkqMRPd2HnuyNKRcFTGPQJ0OuLcLGilmSRxb0kuMlYizZsQfTg/197LVyn40= ellahiphotography@instance-1
-
-Jenkins admin pw 064953079e5b47f796cc9a25c8d85fab
-
-http://34.89.39.79:8080/
-
 Installed Jenkins
 
-# The QA Project
+# QA Practical Project
 
 ## Intro
 This repository contains my QA Practical Project. The purpose of this ReadMe is to outline how I met the key deliverables of the assigned project with supporting documentation.
-Welcome to Catman9000's Repository. This .ReadMe file will walk you through how I approached the project, despite numerous difficulties and obstacles, and how I resolved the issues, as well as what I would have liked to do better. 
-
-## Contents
-
-A. [The Project](#The-Project)
-B. [The App](#The-App)
-C. [What's a CI Pipeline?](#Cont-Int-Pipeline)
-D. [What went wrong?](#Issues)
-E. [Going forward](#For-the-future)
-
 
 ## The Project
 
-First of all, the project itself was very exciting. There were numerous things to learn and I really enjoyed the ins and outs of what it would entail. The primary goal of this objective was to have an application ready that followed the CRUD (Create, Read, Update, Delete) methodology.
-The application itself required several key components and tools which would bring it all together. These included a Flask back-end framework which itself allows for use of extended and standard functions via imports, and which would be interacted with via a simple html-coded page hosted on Google's Cloud Servers. It would be written in Python, making use of numerous other imports and extensions and functions. It was also used to show relations between tables.
+The aim of this project was in line with the brief assigned by QA, the objective of which was to utilise an architecture comprised of a front-end service and three other apis which were containerised via the use of Docker, which would allow them to communicate with each other. The brief required, amongst other things:
 
-My project also made use of numerous methods, workflow decisions and tools to assist me in the creation of the application. These included Git, Python development, HTML coding, Jenkins, CI and of course managing the whole workflow of the project itself.
+* Ansible knowledge
 
-To manage my workflow, I used Jira, which is known to be extremely effective in helping both small developers and enterprise-level company teams manage their workflow. In my own experience, it is very helpful in keeping track of errors, timing the project and also measuring progress. 
+* Advanced Python knowledge
 
-Although I did set up Jenkins as shown below, I unfortunately was not able to get it working in time due to several issues with Google Cloud which were shown to my instructor Adam. These took a lot of time and ate into valuable time-based progress as a lot of things were dependent on them. I have also screenshot that particular error too.
+* Use of virtualised containers
+
+* Basic website html coding
+
+* Flask knowledge
+
+* Requiring 4 APIs that can cross-interact
+
+To this end, my CI pipeline consisted of:
+
+* Software Planning/Tracking = Jira
+
+* VCS = Git
+
+* CI Server: Jenkins
+
+* Virtual Containerisation: Docker
+
+and more.
+
+# Breakdown of the application
 
 
-![Flask diagram](https://github.com/Catman9000/TheDatingGame/blob/main/ERD.png)
+![Website in action](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
 
-## The App
 
-The basis of my app was to have a very simple website where the idea was I am using it to manage my own stock of cat inventory. Originally, the idea was to have a dating quiz, however due to difficulties in my project and GCS bugs which were Google-Side, I was unable to carry out the original project. As a result, I decided to tame it down and do the best I could until everything was sorted. Unfortunately, this took a bit of time and is not something I expected to face given the time constraints and usual reliability of big cloud vendors. However, this has also taught me a valuable lesson to make sure I plan far ahead in case such occurances happen. 
+![ApplicationVSCode](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
 
-The tables in the shop were thus 3: 
-A Product table which could create entries, delete entries, update entries and read them from the database.
-A User table which could create user entries in the event that I need to take a trip and someone needs to look after my cats and can manage it all.
-A Shopping Cart-style table which would contain orders on the way as well as who ordered them and what, so that expenditure can be managed and things aren't ordered in excess. 
-My ERD Diagram is as follows:
+As everyone in the class surely knows, I have a soft spot for cats. I have three of them so I decided to once again include them in my project, and by definition, the application and its contents.
 
-![ERD diagram](https://github.com/Catman9000/TheDatingGame/blob/main/ERD.png)
+I have broken down the application in this readme as it appears logically.
 
-The ERD diagrams helped me visualise how I wanted to plan the project going forward and what shape and form my database tables would look, as well as what kind of data they would contain. This is helpful because it helps to plan ahead the relationships between the various tables within the database and how they will interact with each other.
-The relationship between User and Item is one to many.
-The relationship between Item to Orders was many to one, and the relationship between shop orders and user was many to one.
 
-I would have preferred to have a more full-fledged interactive website, which would track the orders and deliveries between my 3 cats, and assign product types, favourites, who issued the orders as well as total cost/expenditure. This is something I plan to do going forward.
+
+
+![Service 1](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+
+
+
+## Service 1 - Front-End
+First and foremost is what is known as the front-end. 
+This is what the end-user interacts with, and it acts as a sort of tunnel from which the other 3 services can cross-communicate and output to the user. The services operate on a combination of methods, including GET and POST. This is also mentioned again when describing each service so you can know how the application functions.
+An sql database container is where the results are stored so that they can then be output on the webpage to show previous results. 
+
+
+![Service 2](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+
+## Service 2 
+Secondly, we have something known as Service 2. In my application, this is the service that operates on a GET method. This service responds assigns a cat.
+
+
+![Service 3](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+## Service 3
+Thirdly, Service 3 operates on a GET method too. It determines a treat name assigned at random to be given to the cat picked at random.
+
+
+
+
+![Service 4](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+## Service 4
+Finally, Service 4 operates on a POST method. Making the use of JSON scripting which allows us to manipulate data and code in various ways, the ultimate goal is to allow it to post a randomly generated day the cats will be fed on. This object is created based on the results of the other two services.
+
+
+## Ansible-Roles
+
+![Ansible-Roles](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+
+Ansible galaxy roles were used to provision the underlying infrastructure of my virtual environment, as well as provision resources and assign roles inside my cloud network alongside Docker.
+
+## Risk Assessment
+
+A risk assessment is important to be carried out as it allows me to take any possible setbacks into account and allows me to have some failsafes in place, as well as employ best practices which have been proven to mitigate against numerous risks. Below is my risk assessment:
+
+
+
+![Risk-Assessment](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+
 
 ## CI Pipeline
 
 A CI Pipeline is a working policy widely adopted, a guideline, so to speak, that allows one to carry out several aspects of their application development, building, integration, testing, deployment and tracking. A good CI Pipeline is one that allows the person to have peace of mind whilst insuring that the project itself is completed on time whilst also being continuously improved, reiterated, and delivered in a timely manner that also automates the more tedious aspects that can have a big impact on one's work, such as automated backing up on the cloud via git or automated deployment via Jenkins.
 
+## Jira
+
 For tracking, I chose Jira. This is because it's what I learnt on the course, and since I'm familiar with it, I decided it's the best option for me.
 
-I decided to follow the structure I was taught in my 4 week course, including making use of user stories, following the format of "As a user/developer, I want to... So that...."
+
+
+![Devstory](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+
+
+![Userstory](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+
+I decided to follow the structure I was taught over my 8 weeks so far, including making use of user stories, following the format of "As a user/developer, I want to... So that...."
+
+![Jiraboard](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+The Kanban-style board helped me visualise how I wanted to plan the project going forward. This is helpful because it helps me to plan ahead the relationships between the various services and the data contained within, as well as how they will interact with each other.
+
+![Colourcoded](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+The colour-coding also helps me focus and helps me keep track of what is going on easier as well.
+
+
 
 I also broke down the project planning into 3 parts:
 To-Do: The parts of the project that are/were to be done,
 In Progress: In progress/things being worked on,
 Done: What was completed.
+This was also managed with respect to time, so different tasks of different importance were given variable lengths of time and weighing in the importance of the application too.
 
-Below is the structure of the tools and my CI Pipeline.
+![Roadmap](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
 
-![Project Roadmap](https://github.com/Catman9000/TheDatingGame/blob/main/CI.png)
+And here is a view of the Sprint in progress and the backlogs in accordance.
 
-![Jira](https://github.com/Catman9000/TheDatingGame/blob/main/Jira%20workflow.png)
+![ProcessSprintJira](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+## GIT
 
 Git was my dedicated choice of Version Control System, due to it being extremely reliable and also having features in place that work well with a developer workflow. I made use of branches so that everything in my project was not just on the main branch. This was so that if anything went wrong, my main working instance of the whole application wouldn't be affected, causing setbacks or even total loss of functionality.
 
-I also used MySQL to set up the databased and also cross-integrated and managed via SQLAlchemy in Flask.
+![Gmain](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
 
 Below is my network graph, which is something Github generates via insights to show the branches and structure of the changes and commits. This is useful because it gives you a visual representation, and also helps identify at what stages changes were committed, as well who made them and at what level.
 
 ![Network Graph](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
 
-Jenkins was used to build and deploy via automation, as well as running integration testing.
+## Jenkins
 
-![Jenkins](https://github.com/Catman9000/TheDatingGame/blob/main/jenkins2.png)
-
-![Jenkins Two](https://github.com/Catman9000/TheDatingGame/blob/main/jenkins3.png)
+Jenkins was used to build and deploy via automation, as well as running integration testing. It's also extremely useful for its many features including webhooks, deploying images, rolling updates and more!
 
 
-## My App - The Cat Stock Inventory
+![Webhook](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
 
-Here is the main homepage:
 
-![Homepage](https://github.com/Catman9000/TheDatingGame/blob/main/Homepage.png)
 
-Here, the homepage automatically displays the inventory so it's easy to check at a glance. 
+![Fixing Jenkins Errors](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
 
-![Add User](https://github.com/Catman9000/TheDatingGame/blob/main/Add%20User.png)
+## Postman
 
-Add a user
+I used Postman to test the website and see how the various json code manipulation worked and whether all the methods were working as intended. Below is an example of Postman in action:
 
-![Add Item](https://github.com/Catman9000/TheDatingGame/blob/main/Add%20Item.png)
+![Postman](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
 
-Add Items, Update, Delete, Read.
 
-## Risk Assessment:
 
-![Risk assessment](https://github.com/Catman9000/TheDatingGame/blob/main/Risk%20Assessment.png)
 
+## Google Cloud Platform
+
+Google Cloud Platform was used to host the virtual machines. I chose GCP as I am familiar with the setup and it offers high risk and security, as well as features such as backing up disk images, snapshots and SSH security as well as vTPM.
+
+
+![Firewall](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+
+Setting up firewall rules and opening ports:
+
+![Previous VM Instances](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+![New VM Instances](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+
+Due to the result of issues in the first project, I decided to create a separate project and migrated my VMs across and continued from there.
+
+![New VM Instances2](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+## Readme
+
+The readme, as you can see, has been completed, and was updated alongside the project along with screenshots taken at each stage to profile the nature of issues when and where they arose, as well as provide a detailed trail of my journey with this project.
+
+![Imagesbeingpushed](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
 
 ## Known Issues:
 
-GCP's APIs on my account refused to work despite numerous attempts, so I had to halt my project until a fix was found. This severely impacted my progress and was very spontaneous, having no rhyme or rhythm. This resulted in several issues that impacted the whole of the project, including leaving me short on time and affecting Flask development, server instancing, Jenkins too.
+## Jenkins
+
+I encountered a lot of difficulty with Jenkins during my project, especially when it came to solving the fingerprint authentication and SSH and Authorized key bugs.
+
+![JenkinsKeyError](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+Researching on keygens and authenticating methods in linux
+
+![Researching](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+Below is me in the process of fixing this error.
+
+![JenkinsFixingStage](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+Modifying SSHD configs:
+
+![SSHD](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+
+And here I was successful in finally ssh'ing as Jenkins through the Swarm VM.
+
+![JenkinsFixed](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+
+
+Rolling Update of the website:
+
+![WebsiteRolling](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
 
 ## Future Improvements:
-Given time to reiterate and further improve the project, I would have preferred to make some final adjustments and changes to the project, in addition to the ones mentioned already. These include:
+
 
 * - UI - Given the nature of the web application, I would have preferred to have a more aesthetic website that was easier on the eye and not as rough-looking.
-
-* - Bugs - I would have liked to resolve bugs and slight errors that occured. This is because if I have an application, I would want to eliminate all bugs so that it works as smoothly as possible. Given my relative inexperience, this was to be expected but it is the end goal regardless and one I strived to work towards.
 
 * - Jenkins
