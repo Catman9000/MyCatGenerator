@@ -35,7 +35,7 @@ and more.
 # Breakdown of the application
 
 
-![Website in action](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Website in action](https://github.com/Catman9000/MyCatGenerator/blob/main/Website%20in%20action.jpg)
 
 
 ![ApplicationVSCode](https://github.com/Catman9000/MyCatGenerator/blob/main/The%20application%20in%20vscode.jpg)
