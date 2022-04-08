@@ -35,7 +35,7 @@ and more.
 # Breakdown of the application
 
 
-![Website in action](https://github.com/Catman9000/MyCatGenerator/blob/main/images/Website%20in%20action.jpg)
+![Website in action](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
 
 
 ![ApplicationVSCode](https://github.com/Catman9000/MyCatGenerator/blob/main/The%20application%20in%20vscode.jpg)
@@ -65,7 +65,7 @@ An sql database container is where the results are stored so that they can then 
 Secondly, we have something known as Service 2. In my application, this is the service that operates on a GET method. This service responds assigns a cat.
 
 
-![Service 3](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Service 3](https://github.com/Catman9000/MyCatGenerator/blob/main/service%203.jpg)
 
 ## Service 3
 Thirdly, Service 3 operates on a GET method too. It determines a treat name assigned at random to be given to the cat picked at random.
@@ -73,7 +73,7 @@ Thirdly, Service 3 operates on a GET method too. It determines a treat name assi
 
 
 
-![Service 4](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Service 4](https://github.com/Catman9000/MyCatGenerator/blob/main/Service%204.jpg)
 
 ## Service 4
 Finally, Service 4 operates on a POST method. Making the use of JSON scripting which allows us to manipulate data and code in various ways, the ultimate goal is to allow it to post a randomly generated day the cats will be fed on. This object is created based on the results of the other two services.
@@ -81,7 +81,7 @@ Finally, Service 4 operates on a POST method. Making the use of JSON scripting w
 
 ## Ansible-Roles
 
-![Ansible-Roles](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Ansible-Roles](https://github.com/Catman9000/MyCatGenerator/blob/main/ansible-roles.jpg)
 
 
 Ansible galaxy roles were used to provision the underlying infrastructure of my virtual environment, as well as provision resources and assign roles inside my cloud network alongside Docker.
@@ -92,7 +92,7 @@ A risk assessment is important to be carried out as it allows me to take any pos
 
 
 
-![Risk-Assessment](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Risk-Assessment](https://github.com/Catman9000/MyCatGenerator/blob/main/Risk%20Assessment.png)
 
 
 
@@ -106,20 +106,20 @@ For tracking, I chose Jira. This is because it's what I learnt on the course, an
 
 
 
-![Devstory](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Devstory](https://github.com/Catman9000/MyCatGenerator/blob/main/Devstory.jpg)
 
 
 
-![Userstory](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Userstory](https://github.com/Catman9000/MyCatGenerator/blob/main/Userstory.jpg)
 
 
 I decided to follow the structure I was taught over my 8 weeks so far, including making use of user stories, following the format of "As a user/developer, I want to... So that...."
 
-![Jiraboard](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Jiraboard](https://github.com/Catman9000/MyCatGenerator/blob/main/Process%20of%20making%20Jira%20backlog-sprint.jpg)
 
 The Kanban-style board helped me visualise how I wanted to plan the project going forward. This is helpful because it helps me to plan ahead the relationships between the various services and the data contained within, as well as how they will interact with each other.
 
-![Colourcoded](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Colourcoded](https://github.com/Catman9000/MyCatGenerator/blob/main/Colour%20coded.jpg)
 
 The colour-coding also helps me focus and helps me keep track of what is going on easier as well.
 
@@ -131,38 +131,35 @@ In Progress: In progress/things being worked on,
 Done: What was completed.
 This was also managed with respect to time, so different tasks of different importance were given variable lengths of time and weighing in the importance of the application too.
 
-![Roadmap](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Roadmap](https://github.com/Catman9000/MyCatGenerator/blob/main/My%20Roadmap%20Jira.jpg)
 
 And here is a view of the Sprint in progress and the backlogs in accordance.
 
-![ProcessSprintJira](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![ProcessSprintJira](https://github.com/Catman9000/MyCatGenerator/blob/main/Jira%20board%20sprint.jpg)
 
 ## GIT
 
 Git was my dedicated choice of Version Control System, due to it being extremely reliable and also having features in place that work well with a developer workflow. I made use of branches so that everything in my project was not just on the main branch. This was so that if anything went wrong, my main working instance of the whole application wouldn't be affected, causing setbacks or even total loss of functionality.
 
-![Gmain](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Gmain](https://github.com/Catman9000/MyCatGenerator/blob/main/Github%20%2B%20readme%20main.jpg)
 
 Below is my network graph, which is something Github generates via insights to show the branches and structure of the changes and commits. This is useful because it gives you a visual representation, and also helps identify at what stages changes were committed, as well who made them and at what level.
 
-![Network Graph](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Network Graph](https://github.com/Catman9000/MyCatGenerator/blob/main/Github%20network%20insight%20graph.jpg)
 
 ## Jenkins
 
 Jenkins was used to build and deploy via automation, as well as running integration testing. It's also extremely useful for its many features including webhooks, deploying images, rolling updates and more!
 
 
-![Webhook](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Webhook](https://github.com/Catman9000/MyCatGenerator/blob/main/Jenkins%20git%20webhook.jpg)
 
-
-
-![Fixing Jenkins Errors](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
 
 ## Postman
 
 I used Postman to test the website and see how the various json code manipulation worked and whether all the methods were working as intended. Below is an example of Postman in action:
 
-![Postman](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Postman](https://github.com/Catman9000/MyCatGenerator/blob/main/postman.jpg)
 
 
 
@@ -172,25 +169,25 @@ I used Postman to test the website and see how the various json code manipulatio
 Google Cloud Platform was used to host the virtual machines. I chose GCP as I am familiar with the setup and it offers high risk and security, as well as features such as backing up disk images, snapshots and SSH security as well as vTPM.
 
 
-![Firewall](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Firewall](https://github.com/Catman9000/MyCatGenerator/blob/main/firewall.jpg)
 
 
 Setting up firewall rules and opening ports:
 
-![Previous VM Instances](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Previous VM Instances](https://github.com/Catman9000/MyCatGenerator/blob/main/Previous%20VM%20instances.jpg)
 
-![New VM Instances](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![New VM Instances](https://github.com/Catman9000/MyCatGenerator/blob/main/New%20VM%20Instances.jpg)
 
 
 Due to the result of issues in the first project, I decided to create a separate project and migrated my VMs across and continued from there.
 
-![New VM Instances2](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![New VM Instances2](https://github.com/Catman9000/MyCatGenerator/blob/main/new%20vm%20instances%202.jpg)
 
 ## Readme
 
 The readme, as you can see, has been completed, and was updated alongside the project along with screenshots taken at each stage to profile the nature of issues when and where they arose, as well as provide a detailed trail of my journey with this project.
 
-![Imagesbeingpushed](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Imagesbeingpushed](https://github.com/Catman9000/MyCatGenerator/blob/main/images%20being%20pushed%20to%20github%20alongside%20application%20and%20readme.jpg)
 
 ## Known Issues:
 
@@ -198,29 +195,29 @@ The readme, as you can see, has been completed, and was updated alongside the pr
 
 I encountered a lot of difficulty with Jenkins during my project, especially when it came to solving the fingerprint authentication and SSH and Authorized key bugs.
 
-![JenkinsKeyError](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![JenkinsKeyError](https://github.com/Catman9000/MyCatGenerator/blob/main/Jenkins%20public%20key%20error.jpg)
 
 Researching on keygens and authenticating methods in linux
 
-![Researching](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![Researching](https://github.com/Catman9000/MyCatGenerator/blob/main/researching%20up%20on%20keygen.jpg)
 
 Below is me in the process of fixing this error.
 
-![JenkinsFixingStage](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![JenkinsFixingStage](https://github.com/Catman9000/MyCatGenerator/blob/main/Jenkins%20fixing%20stage.jpg)
 
 Modifying SSHD configs:
 
-![SSHD](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![SSHD](https://github.com/Catman9000/MyCatGenerator/blob/main/sshd%20config.jpg)
 
 
 And here I was successful in finally ssh'ing as Jenkins through the Swarm VM.
 
-![JenkinsFixed](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![JenkinsFixed](https://github.com/Catman9000/MyCatGenerator/blob/main/jenkins%20fixed%20.jpg)
 
 
 Rolling Update of the website:
 
-![WebsiteRolling](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![WebsiteRolling](https://github.com/Catman9000/MyCatGenerator/blob/main/Website%20rolling%20update.jpg)
 
 ## Future Improvements:
 
