@@ -13,7 +13,7 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: catdb
   front-end:
-    image: phoenixpatch/mycatgenerator-front:latest
+    image: phoenixpatch/mycatgenerator-front:v2
     build: ./front-end
     networks:
       - "cat-net"
