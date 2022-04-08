@@ -10,14 +10,14 @@ class TestBase(TestCase):
 
 class TestView(TestBase):
     @patch('application.routes.choice', return_value='Mila')
-    def test_get_animal_cat(self, mock_func):
-        response = self.client.get(url_for('cat'))
+    def test_get_animal_mila(self, mock_func):
+        response = self.client.get(url_for('get_cat'))
         self.assert200(response)
         self.assertIn(b'Mila', response.data)
     
     @patch('application.routes.choice', return_value='Phoenix')
-    def test_get_animal_dog(self, mock_func):
-        response = self.client.get(url_for('treat'))
+    def test_get_animal_phoenix(self, mock_func):
+        response = self.client.get(url_for('get_cat'))
         self.assert200(response)
-        self.assertIn(b'treat', response.data)
+        self.assertIn(b'Phoenix', response.data)
         
