@@ -38,7 +38,7 @@ and more.
 ![Website in action](https://github.com/Catman9000/MyCatGenerator/blob/main/images/Website%20in%20action.jpg)
 
 
-![ApplicationVSCode](https://github.com/Catman9000/TheDatingGame/blob/main/network.png)
+![ApplicationVSCode](https://github.com/Catman9000/MyCatGenerator/blob/main/The%20application%20in%20vscode.jpg)
 
 As everyone in the class surely knows, I have a soft spot for cats. I have three of them so I decided to once again include them in my project, and by definition, the application and its contents.
 
